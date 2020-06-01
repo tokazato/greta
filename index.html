@@ -29,13 +29,13 @@
                 </div>
                 <div class="header__navigation__box">
                     <nav>
-                        <ul>
+                        <ul class="header__navigation__ul">
                             <li>
-                                <a href="#!"> მთავარი </a>
+                                <a class="active" href="#!"> მთავარი </a>
                             </li>
                             <li>
                                 <a href="#!"> ჩვენ სესახებ <i class="fas fa-chevron-down"></i> </a>
-                                <ul>
+                                <ul class="header__navigation__dropdown__ul">
                                     <li>
                                         <a href="#!">test</a>
                                     </li>
@@ -46,7 +46,7 @@
                             </li>
                             <li>
                                 <a href="#!"> აქტივობები <i class="fas fa-chevron-down"></i> </a>
-                                <ul>
+                                <ul class="header__navigation__dropdown__ul">
                                     <li>
                                         <a href="#!">test</a>
                                     </li>
@@ -57,7 +57,7 @@
                             </li>
                             <li>
                                 <a href="#!"> სიახლეები <i class="fas fa-chevron-down"></i> </a>
-                                <ul>
+                                <ul class="header__navigation__dropdown__ul">
                                     <li>
                                         <a href="#!">test</a>
                                     </li>
@@ -68,7 +68,7 @@
                             </li>
                             <li>
                                 <a href="#!"> დახმარება <i class="fas fa-chevron-down"></i> </a>
-                                <ul>
+                                <ul class="header__navigation__dropdown__ul"> 
                                     <li>
                                         <a href="#!">test</a>
                                     </li>
@@ -83,6 +83,7 @@
                         </ul>
                     </nav>
                     <div class="header__language">
+                        <i class="fas fa-chevron-down"></i>
                         <div class="header__language__content">
                             <a href="#!">GEO</a>
                             <a href="#!">ENG</a>
@@ -96,10 +97,10 @@
           <!-- Swiper -->
         <div class="swiper-container gallery-top main-slider-top">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide main-swiper-slide">
                     <div class="main-slider-texts">
                         <div class="main-slider-texts-box">
-                            <h1>რა არის ლორემ იპსუმი?</h1>
+                            <h1 class="main-slider-title">რა არის ლორემ იპსუმი?</h1>
                             <div class="main-slider-text">
                                 <p>
                                     ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს 
@@ -111,25 +112,27 @@
                                     გამეორებადი სიტყვებია ხოლმე.
                                 </p>
                             </div>
-                            <div>
-                                <div>
-                                    <i class="fas fa-chevron-right"></i>
+                            <div class="main-slider-seemore-box">
+                                <div class="main-slider-seemore-arrow">
+                                    <div>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
                                 </div>
                                 <a href="#!">იხილეთ ვრცლად</a>
                             </div>
                         </div>
                     </div>
                     <div class="main-slider-imgs">
-                        <img src="assets/media/img/sl4.png" alt="" class="main-slide-big-img">
-                        <div>
-                            <img src="assets/media/img/sl4.png" alt="" class="main-slide-small-img">
+                        <img src="assets/media/img/sl4.jpg" alt="" class="main-slide-big-img">
+                        <div class="main-slide-small-img">
+                            <img src="assets/media/img/sl4.png" alt="" >
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide main-swiper-slide">
                     <div class="main-slider-texts">
                         <div class="main-slider-texts-box">
-                            <h1>რა არის ლორემ იპსუმი?</h1>
+                            <h1 class="main-slider-title">რა არის ლორემ იპსუმი?</h1>
                             <div class="main-slider-text">
                                 <p>
                                     ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს 
@@ -141,18 +144,20 @@
                                     გამეორებადი სიტყვებია ხოლმე.
                                 </p>
                             </div>
-                            <div>
-                                <div>
-                                    <i class="fas fa-chevron-right"></i>
+                            <div class="main-slider-seemore-box">
+                                <div class="main-slider-seemore-arrow">
+                                    <div>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
                                 </div>
                                 <a href="#!">იხილეთ ვრცლად</a>
                             </div>
                         </div>
                     </div>
                     <div class="main-slider-imgs">
-                        <img src="assets/media/img/sl4.png" alt="" class="main-slide-big-img">
-                        <div>
-                            <img src="assets/media/img/sl4.png" alt="" class="main-slide-small-img">
+                        <img src="assets/media/img/sl4.jpg" alt="" class="main-slide-big-img">
+                        <div class="main-slide-small-img">
+                            <img src="assets/media/img/sl4.png" alt="" >
                         </div>
                     </div>
                 </div>
@@ -160,16 +165,22 @@
         </div>
         <div class="swiper-container gallery-thumbs main-slider-thumbs">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="" alt="">
+                <div class="swiper-slide main-swiper-thumb-swiper-slide">
+                    <img src="assets/media/img/1.png" alt="">
                 </div>
-                <div class="swiper-slide">
-                    <img src="" alt="">
+                <div class="swiper-slide main-swiper-thumb-swiper-slide">
+                    <img src="assets/media/img/1.png" alt="">
+                </div>
+                <div class="swiper-slide main-swiper-thumb-swiper-slide">
+                    <img src="assets/media/img/1.png" alt="">
+                </div>
+                <div class="swiper-slide main-swiper-thumb-swiper-slide">
+                    <img src="assets/media/img/1.png" alt="">
                 </div>
             </div>
         </div>
     </main>
-    <section>
+    <section class="news__section">
         <div class="container">
             <div class="news">
                 <div class="news__header">
@@ -192,8 +203,10 @@
                             </p>
                         </div>
                         <div class="news__item__seemore">
-                            <div>
-                                <i class="fas fa-chevron-right"></i>
+                            <div class="news-seemore-arrow">
+                                <div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
                             </div>
                             <a href="#!">იხილეთ ვრცლად</a>
                         </div>
@@ -213,8 +226,10 @@
                             </p>
                         </div>
                         <div class="news__item__seemore">
-                            <div>
-                                <i class="fas fa-chevron-right"></i>
+                            <div class="news-seemore-arrow">
+                                <div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
                             </div>
                             <a href="#!">იხილეთ ვრცლად</a>
                         </div>
@@ -234,8 +249,10 @@
                             </p>
                         </div>
                         <div class="news__item__seemore">
-                            <div>
-                                <i class="fas fa-chevron-right"></i>
+                            <div class="news-seemore-arrow">
+                                <div>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
                             </div>
                             <a href="#!">იხილეთ ვრცლად</a>
                         </div>
@@ -244,38 +261,38 @@
             </div>
         </div>
     </section>
-    <div>
+    <div class="tourism__farm__section">
         <div class="tourism">
             <div class="tourism__imgs">
-                <a href="#!"> ტურიზმი </a>
-                <div>
-                    <img src="assets/media/img/2.png" alt="">
+                <a class="tourism__title" href="#!"> ტურიზმი </a>
+                <div class="toursim__img toursim__img__1">
+                    <img src="assets/media/img/Union12.svg" alt="">
                 </div>
-                <div>
-                    <img src="assets/media/img/2.png" alt="">
+                <div class="toursim__img toursim__img__2">
+                    <img src="assets/media/img/Rectangle500.svg" alt="">
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="toursim__img toursim__img__3">
+                    <img src="assets/media/img/sea.png" alt="">
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="toursim__img toursim__img__4">
+                    <img src="assets/media/img/maintain.png" alt="">
                 </div>
             </div>
         </div>
         <div class="farm">
-            <div class="tourism__imgs">
-                <a href="#!"> ორგანული სოფლის მეოურნეობა </a>
-                <div>
+            <div class="farm__imgs">
+                <a class="farm__title" href="#!"> ორგანული სოფლის მეოურნეობა </a>
+                <div class="farm__img farm__img__1">
+                    <img src="assets/media/img/Union9.svg" alt="">
+                </div>
+                <div class="farm__img farm__img__2">
+                    <img src="assets/media/img/Rectangle500.svg" alt="">
+                </div>
+                <div class="farm__img farm__img__3">
                     <img src="assets/media/img/2.png" alt="">
                 </div>
-                <div>
+                <div class="farm__img farm__img__4">
                     <img src="assets/media/img/2.png" alt="">
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <img src="" alt="">
                 </div>
             </div>
         </div>
