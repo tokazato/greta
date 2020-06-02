@@ -1,5 +1,4 @@
 var galleryThumbs = new Swiper('.main-slider-thumbs', {
-    spaceBetween: 30,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesVisibility: true,
@@ -11,3 +10,10 @@ var galleryThumbs = new Swiper('.main-slider-thumbs', {
       swiper: galleryThumbs
     }
   });
+
+
+const button = document.querySelector('.menu__mobile_button');
+
+button.addEventListener('click', () => {
+	button.classList.toggle('active');
+})
