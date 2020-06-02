@@ -443,6 +443,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   height: 865px;
+  overflow: hidden;
 }
 
 .tourism__farm__section .tourism {
@@ -470,6 +471,20 @@ main {
   transition: 0.3s ease;
 }
 
+.tourism__farm__section .tourism .tourism__title {
+  position: absolute;
+  z-index: 9;
+  left: 466px;
+  top: 175px;
+  width: 420px;
+  text-align: right;
+  padding-right: 80px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #444344;
+  cursor: pointer;
+}
+
 .tourism__farm__section .tourism .tourism__imgs {
   position: absolute;
   top: 50%;
@@ -477,16 +492,6 @@ main {
           transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-}
-
-.tourism__farm__section .tourism .tourism__imgs .tourism__title {
-  position: absolute;
-  right: 0;
-  top: 180px;
-  font-size: 16px;
-  letter-spacing: 0px;
-  color: #444344;
-  cursor: pointer;
 }
 
 .tourism__farm__section .tourism .tourism__imgs .toursim__img {
@@ -497,7 +502,7 @@ main {
 }
 
 .tourism__farm__section .tourism .tourism__imgs .toursim__img__1 {
-  left: -30px;
+  left: -29px;
 }
 
 .tourism__farm__section .tourism .tourism__imgs .toursim__img__2 {
@@ -537,6 +542,20 @@ main {
   transition: 0.3s ease;
 }
 
+.tourism__farm__section .farm .farm__title {
+  position: absolute;
+  z-index: 9;
+  bottom: 235px;
+  width: 420px;
+  right: 466px;
+  text-align: left;
+  padding-left: 80px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #444344;
+  cursor: pointer;
+}
+
 .tourism__farm__section .farm .farm__imgs {
   position: absolute;
   top: 50%;
@@ -544,17 +563,6 @@ main {
           transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-}
-
-.tourism__farm__section .farm .farm__imgs .farm__title {
-  position: absolute;
-  z-index: 9;
-  bottom: 235px;
-  left: -100px;
-  font-size: 16px;
-  letter-spacing: 0px;
-  color: #444344;
-  cursor: pointer;
 }
 
 .tourism__farm__section .farm .farm__imgs .farm__img {
@@ -565,18 +573,269 @@ main {
 }
 
 .tourism__farm__section .farm .farm__imgs .farm__img__1 {
-  left: -150px;
+  right: -30px;
 }
 
 .tourism__farm__section .farm .farm__imgs .farm__img__2 {
-  left: 130px;
+  right: -60px;
 }
 
 .tourism__farm__section .farm .farm__imgs .farm__img__3 {
-  left: 160px;
+  right: -90px;
 }
 
 .tourism__farm__section .farm .farm__imgs .farm__img__4 {
-  left: 260px;
+  right: -170px;
+}
+
+.blog__section {
+  padding: 180px 0;
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+
+.blog__section .blog__title {
+  padding: 0 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.blog__section .blog__title h1 {
+  font-size: 32px;
+  letter-spacing: 0px;
+  color: #228469;
+}
+
+.blog__section .blog__title a {
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  color: #444344;
+}
+
+.blog__section .blogs li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.blog__section .blogs li .blog__img {
+  width: 50%;
+  height: 260px;
+}
+
+.blog__section .blogs li .blog__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog__section .blogs li .blog__text {
+  width: 50%;
+  padding-left: 130px;
+}
+
+.blog__section .blogs li .blog__text .blob__list__title {
+  max-width: 470px;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #228469;
+  margin-bottom: 16px;
+}
+
+.blog__section .blogs li .blog__text .blob__list__text {
+  max-width: 370px;
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  color: #444344;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.blog__section .blogs .blog__2 {
+  padding: 15px;
+  background: #fff;
+}
+
+.statement__section {
+  padding-bottom: 180px;
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+
+.statement {
+  background: #fff;
+  padding: 0 calc((100% - 1170px) / 2) 50px;
+}
+
+.statement__title {
+  font-size: 32px;
+  letter-spacing: 0px;
+  color: #228469;
+  margin: 70px 0 60px 0;
+}
+
+.statement__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.statement__imgs {
+  position: relative;
+  width: 47%;
+}
+
+.statement__imgs .statement__img {
+  width: 400px;
+  height: 247px;
+  margin-bottom: 20px;
+}
+
+.statement__imgs .statement__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.statement__imgs .statement__img__round {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+}
+
+.statement__text {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.statement__text .state__title {
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #444344;
+  text-transform: uppercase;
+  margin: 30px 0 16px 0;
+}
+
+.statement__text .state__link a {
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #228469;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+footer {
+  background: #228469 0% 0% no-repeat padding-box;
+  padding: 100px 0 60px 0;
+}
+
+footer .footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__top nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  width: 70vw;
+}
+
+footer .footer__top nav a {
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+footer .footer__contact__tel, footer .footer__contact__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer .footer__contact__email__icon, footer .footer__contact__tel__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #DEE0D7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  color: #fff;
+}
+
+footer .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(222, 224, 215, 0.1);
+}
+
+footer .footer__bottom p, footer .footer__bottom a {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+footer .footer__bottom a span {
+  color: #F7CE23;
 }
 /*# sourceMappingURL=style.css.map */
