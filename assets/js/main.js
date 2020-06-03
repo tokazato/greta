@@ -12,8 +12,13 @@ var galleryThumbs = new Swiper('.main-slider-thumbs', {
   });
 
 
-const button = document.querySelector('.menu__mobile_button');
+const menuMobileButtton = document.querySelector('.menu__mobile_button');
+menuMobileButtton.addEventListener('click', () => {
+	menuMobileButtton.classList.toggle('active');
+});
 
-button.addEventListener('click', () => {
-	button.classList.toggle('active');
+
+const cookiesButton = document.querySelector('#cookiesButton');
+cookiesButton.addEventListener('click', () => {
+  document.querySelector('.cookies').style.display = 'none';
 })
