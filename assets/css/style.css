@@ -419,6 +419,22 @@ main {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .main-slider-texts .main-slider-texts-box {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .main-slider-title {
   margin-bottom: 50px;
   color: #228469;
@@ -452,6 +468,12 @@ main {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .main-slider-text {
+    margin-right: 0px;
   }
 }
 
@@ -518,6 +540,12 @@ main {
   font-size: 13px;
   letter-spacing: 0px;
   color: #228469;
+}
+
+@media only screen and (max-width: 450px) {
+  .main-slider-seemore-box a {
+    font-size: 10px;
+  }
 }
 
 .main-slider-imgs {
@@ -624,6 +652,20 @@ main {
   transition: 0.3s ease;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-slider-thumbs .main-swiper-thumb-swiper-slide .active__line {
+  width: 50%;
+  height: 0;
+  background: #F7CE23;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .main-slider-thumbs .main-swiper-thumb-swiper-slide:hover {
@@ -636,7 +678,7 @@ main {
   .main-slider-thumbs .main-swiper-thumb-swiper-slide {
     width: 52px !important;
     height: 52px;
-    margin-right: 15px;
+    margin: 7px;
   }
 }
 
@@ -646,10 +688,18 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  position: relative;
+  padding: 3px;
 }
 
 .main-slider-thumbs .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.main-slider-thumbs .swiper-slide-thumb-active .active__line {
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 700px) {
@@ -1077,7 +1127,8 @@ main {
 
 .tourism__farm__section .tourism .tourism__imgs .toursim__img__1 {
   left: -29px;
-  width: 800px;
+  width: 806px;
+  height: 582px;
 }
 
 @media only screen and (max-width: 1210px) {
@@ -1088,7 +1139,8 @@ main {
 
 .tourism__farm__section .tourism .tourism__imgs .toursim__img__2 {
   left: -60px;
-  width: 580px;
+  width: 585px;
+  height: 585px;
 }
 
 @media only screen and (max-width: 1050px) {
