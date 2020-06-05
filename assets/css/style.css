@@ -1,6 +1,6 @@
 @font-face {
   font-family: dejavu2017;
-  src: url(../fonts/BPG2017DejaVuSansCaps.ttf);
+  src: url(../fonts/BPG2017DejaVuSans.ttf);
 }
 
 @font-face {
@@ -549,7 +549,7 @@ main {
 }
 
 .main-slider-imgs {
-  height: 804px;
+  height: calc(100vh - 104px);
   width: 476px;
   position: relative;
 }
@@ -1159,6 +1159,16 @@ main {
   overflow: hidden;
 }
 
+.tourism__farm__section .tourism .tourism__imgs .toursim__img__3::after {
+  content: '';
+  position: absolute;
+  background: rgba(34, 132, 105, 0.2);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 @media only screen and (max-width: 1050px) {
   .tourism__farm__section .tourism .tourism__imgs .toursim__img__3 {
     left: 45%;
@@ -1198,6 +1208,16 @@ main {
   overflow: hidden;
 }
 
+.tourism__farm__section .tourism .tourism__imgs .toursim__img__4::after {
+  content: '';
+  position: absolute;
+  background: rgba(247, 206, 35, 0.2);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 @media only screen and (max-width: 1050px) {
   .tourism__farm__section .tourism .tourism__imgs .toursim__img__4 {
     left: 40%;
@@ -1226,6 +1246,7 @@ main {
   width: 400px;
   right: -109px;
   bottom: -142px;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 700px) {
@@ -1392,6 +1413,16 @@ main {
   overflow: hidden;
 }
 
+.tourism__farm__section .farm .farm__imgs .farm__img__3::after {
+  content: '';
+  position: absolute;
+  background: rgba(34, 132, 105, 0.2);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 @media only screen and (max-width: 1050px) {
   .tourism__farm__section .farm .farm__imgs .farm__img__3 {
     left: 45%;
@@ -1429,6 +1460,16 @@ main {
   right: 60px;
   top: 371px;
   overflow: hidden;
+}
+
+.tourism__farm__section .farm .farm__imgs .farm__img__4::after {
+  content: '';
+  position: absolute;
+  background: rgba(247, 206, 35, 0.2);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 @media only screen and (max-width: 1050px) {

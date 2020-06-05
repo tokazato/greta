@@ -29,7 +29,7 @@ $logo-color: #00cec9;
 }
 @font-face {
     font-family: dejavu2017;
-    src: url(../fonts/BPG2017DejaVuSansCaps.ttf);
+    src: url(../fonts/BPG2017DejaVuSans.ttf);
 }
 @font-face {
     font-family: mrg2010;
@@ -402,7 +402,7 @@ main {
     }
 }
 .main-slider-imgs {
-    height: 804px;
+    height: calc(100vh - 104px);
     width: 476px;
     position: relative;
     > img {
@@ -804,6 +804,15 @@ main {
                 left: -150px;
                 top: 371px;
                 overflow: hidden;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: rgba(34, 132, 105, 0.2);
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                }
                 @include max-width(1050px) {
                     left: 45%;
                     transform: rotate(45deg) translate(-50%, 0%);
@@ -829,6 +838,15 @@ main {
                 left: -230px;
                 top: 371px;
                 overflow: hidden;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: rgba(247, 206, 35, 0.2);
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                }
                 @include max-width(1050px) {
                     left: 40%;
                     transform: rotate(45deg) translate(-50%, 0%);
@@ -847,6 +865,7 @@ main {
                     width: 400px;
                     right: -109px;
                     bottom: -142px;
+                    z-index: 1;
                     @include max-width(700px) {
                         height: 200px;
                         width: 200px;
@@ -959,8 +978,15 @@ main {
                 }
             }
             .farm__img__3 {
-                // right: -90px;
-                // width: 580px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: rgba(34, 132, 105, 0.2);
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                }
                 @include max-width(1050px) {
                     left: 45%;
                     transform: rotate(45deg) translate(-50%, 0%);
@@ -986,8 +1012,15 @@ main {
                 }
             }
             .farm__img__4 {
-                // right: -170px;
-                // width: 580px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: rgba(247, 206, 35, 0.2);
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                }
                 @include max-width(1050px) {
                     left: 40%;
                     transform: rotate(45deg) translate(-50%, 0%);
